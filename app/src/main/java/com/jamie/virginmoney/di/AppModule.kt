@@ -2,6 +2,7 @@ package com.jamie.virginmoney.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.jamie.virginmoney.constants.Constants.BASE_URL
 import com.jamie.virginmoney.data.remote.ApiData
 import com.jamie.virginmoney.data.remote.ApiService
 import com.jamie.virginmoney.data.repository.Repository
@@ -23,7 +24,7 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit = Retrofit.Builder()
-        .baseUrl("https://61e947967bc0550017bc61bf.mockapi.io/api/v1/")
+        .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
 

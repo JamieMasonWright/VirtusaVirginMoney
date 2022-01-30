@@ -8,7 +8,7 @@ import com.jamie.virginmoney.data.model.People
 import com.jamie.virginmoney.databinding.LayoutPeopleListItemBinding
 import com.squareup.picasso.Picasso
 
-class PeopleListAdapter(private val dataSet: ArrayList<People>, private val itemClick:ItemClick) :
+class PeopleListAdapter(private val dataSet: ArrayList<People>, private val itemClick: ItemClick) :
     RecyclerView.Adapter<PeopleListAdapter.ViewHolder>() {
 
     class ViewHolder(private val view: LayoutPeopleListItemBinding) :

@@ -19,6 +19,7 @@ import com.jamie.virginmoney.data.service.Resource
 import com.jamie.virginmoney.databinding.FragmentPeopleBinding
 import com.squareup.picasso.Picasso
 import dagger.hilt.android.AndroidEntryPoint
+import org.w3c.dom.Text
 
 @AndroidEntryPoint
 class PeopleFragment : Fragment(), ItemClick {
@@ -80,13 +81,15 @@ class PeopleFragment : Fragment(), ItemClick {
         val job = view.findViewById<TextView>(R.id.job)
         val email = view.findViewById<TextView>(R.id.email)
         val favouriteColor = view.findViewById<TextView>(R.id.favouriteColor)
+        val createdDate = view.findViewById<TextView>(R.id.created)
         val btnClose = view.findViewById<Button>(R.id.btn_close)
 
 
-        name.text = "Full Name : ${item.firstName}  ${item.lastName}"
-        email.text = "Email : ${item.email}"
-        job.text = "Job : ${item.jobTitle}"
-        favouriteColor.text = "Favourite Color : ${item.favouriteColor}"
+        "Full Name : ${item.firstName}  ${item.lastName}".also { name.text = it }
+        "Email : ${item.email}".also { email.text = it }
+        "Job : ${item.jobTitle}".also { job.text = it }
+        "Favourite Color : ${item.favouriteColor}".also { favouriteColor.text = it }
+        "Created : ${item.createdAt}".also { createdDate.text = it }
         Picasso.get().load(item.avatar).into(avatar);
 
         btnClose.setOnClickListener {
