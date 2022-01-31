@@ -36,21 +36,22 @@ app throughout its lifecycle, so it is important that other developers will be a
 themselves onto the codebase with ease. 🏁 Finished! Now what?
 
 
-
-
 Improvements & upcoming features
 ============
 
 1) General search function 
+   -----------------------
    Adding a Filterable to both the People and Room adapters so users are able to search for specific
    criteria
    
 2) Save function
+   -------------
    Add ROOM persistence library so users are able to store favourable staff members and also book a 
    room
    
 3) Email capabilities
-   Offer user ability to email another user when opening up a single user profile
+   ------------------
+   Offer user ability to email another user when opening up a single user profile.
 
 
     
