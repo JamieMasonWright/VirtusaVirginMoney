@@ -11,9 +11,13 @@ style does. This task is designed to test your ability to functionally design an
 real-world use goals. This skill is important to us at VM. Additionally, we are interested in the
 way your app is structured (how the UI interacts with the data, how your file structure is set out)
 so keep this in mind. The code should be structured in such a way that the app is easily testable.
+    
 🔌 Data Source The API that provides the necessary data is located
 at https://61e947967bc0550017bc61bf.mockapi.io/api/v1/ and is RESTful with 2 endpoints:
-· people · rooms Both support GET requests to list the data and to directly access individual
+· people 
+· rooms 
+
+Both support GET requests to list the data and to directly access individual
 records (the API is currently read only). 📖 Development Story The following story around how the
 app will be used should inform how you approach development/code structure:
 VM aims to use their branding in all their internal services. They currently use a main brand colour
@@ -30,3 +34,25 @@ rigorously tested by our QA resource and will therefore need to support a test e
 as a live environment. VM cannot guarantee that the same developer(s) will always be working on this
 app throughout its lifecycle, so it is important that other developers will be able to onboard
 themselves onto the codebase with ease. 🏁 Finished! Now what?
+
+
+
+
+Improvements & upcoming features
+============
+
+1) General search function 
+   Adding a Filterable to both the People and Room adapters so users are able to search for specific
+   criteria
+   
+2) Save function
+   Add ROOM persistence library so users are able to store favourable staff members and also book a 
+   room
+   
+3) Email capabilities
+   Offer user ability to email another user when opening up a single user profile
+
+
+    
+
+
